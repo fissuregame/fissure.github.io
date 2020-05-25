@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fissure</title>
+
+        <link rel="stylesheet" type="text/css" href="css/generalStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header__game-name">
+                    <img src="images/titulo.jpg">
+                </div>
+                <div class="nav-toggle">
+                    <div class="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="tablink menu-item__hover active" onclick="openLink(event, 'campaing')">Campaña</li>
+                        <li class="tablink menu-item__hover" onclick="openLink(event, 'FAQ')">Preguntas frecuentes</li>
+                        <li class="tablink menu-item__hover" onclick="openLink(event, 'comments')">Comentarios</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="header__background-image">
+                <div class="header__image">
+                    <img src="images/background_image.jpg">
+                    <div class="cover"></div>
+                </div>
+                <div class="header__info">
+                    <div class="header__logo">
+                        <img src="images/Titulo.jpg">
+                    </div>
+                    <hr>
+                    <div class="header__claim">
+                        <h1>Let's repair the kingdom</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="content__page">
+                <article id="campaing" class="tabs">
+                   <section class="sections campaing__presentation">
+                        <div class="media">
+                            <video controls>
+                                <!--<source src="movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">-->
+                                Your browser does not support the video tag.
+                            </video>
+                            <audio controls>
+                               <!--<source src="horse.ogg" type="audio/ogg">
+                                <source src="horse.mp3" type="audio/mpeg">-->
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="description">
+                            <h2>Description</h2>
+                            <p>Fissure es un juego en el que personalizamos a Elizabeth, 
+                                la ayudante de un mago de la corte del reino Courland, 
+                                un día uno de los experimentos del mago sale mal y este pierde el control de su poder mágico, 
+                                causando la aparición de portales dimensionales por todo el reino.
+                                Tras la muerte del mago debes ser tú, su ayudante, quien cumpla la labor de derrotar a las criaturas que emergen de los portales, 
+                                cerrar los portales y devolver la paz al reino.
+                            </p>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="sections campaing__contributions">
+                        <h2>Contributions</h2>
+                        <div class="contributions__info">
+                            <input type="radio" 
+                                class="campaing__stages" 
+                                onclick="showDescription(event)"
+                                name="progress" value="zero" id="zero" checked>
+                            <label for="zero" class="campaing__stages-label stage--one">
+                                <span>Prototipo</span> 0%
+                                <i class="icon-arrow"></i>
+                            </label>
+
+                            <input type="radio" 
+                                class="campaing__stages" 
+                                onclick="showDescription(event)"
+                                name="progress" value="twentyfive" id="twentyfive">
+                            <label for="twentyfive" class="campaing__stages-label stage--two">
+                                <span>Desarrollo</span> 25%
+                                <i class="icon-arrow"></i>
+                            </label>
+
+                            <input type="radio" 
+                                class="campaing__stages" 
+                                onclick="showDescription(event)"
+                                name="progress" value="fifty" id="fifty">
+                            <label for="fifty" class="campaing__stages-label stage--three">
+                                <span>Diseño</span> 50%
+                                <i class="icon-arrow"></i>
+                            </label>
+
+                            <input type="radio" 
+                                class="campaing__stages" 
+                                onclick="showDescription(event)"
+                                name="progress" value="seventyFive" id="seventyFive">
+                            <label for="seventyFive" class="campaing__stages-label stage--four">
+                                <span>Produccción</span> 75%
+                                <i class="icon-arrow"></i>
+                            </label>
+                            
+                            <input type="radio" 
+                                class="campaing__stages" 
+                                onclick="showDescription(event)"
+                                name="progress" value="oneHundred" id="oneHundred">
+                            <label for="oneHundred" class="campaing__stages-label stage--five">
+                                <span>Fin</span> 100%
+                                <i class="icon-arrow"></i>
+                            </label>
+
+                            <div class="progress">
+                                <div class="line-stages"></div>
+                            </div>
+                        </div>
+                        <div class="contributions__content">
+                            <div class="contributions__description">
+                                <figure class="information twentyfive">
+                                    <img src="images/coloso.png"
+                                     alt="example-image">
+                                    <figcaption>
+                                        <h3>Desarrollo</h3>
+                                        <p>
+                                            Praesent suscipit suscipit mattis. 
+                                            Etiam pellentesque vitae elit ac pharetra. 
+                                            Pellentesque nisl ante, blandit vitae lorem at, 
+                                            bibendum ullamcorper erat.
+                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="contributions__description">
+                                <figure class="information fifty">
+                                    <img src="images/rastreador.jpg"
+                                     alt="example-image">
+                                    <figcaption>
+                                        <h3>Diseño</h3>
+                                        <p>
+                                            Praesent suscipit suscipit mattis. 
+                                            Etiam pellentesque vitae elit ac pharetra. 
+                                            Pellentesque nisl ante, blandit vitae lorem at, 
+                                            bibendum ullamcorper erat.
+                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="contributions__description">
+                                <figure class="information seventyFive">
+                                    <img src="images/hydra.jpg"
+                                     alt="example-image">
+                                    <figcaption>
+                                        <h3>Producción</h3>
+                                        <p>
+                                            Praesent suscipit suscipit mattis. 
+                                            Etiam pellentesque vitae elit ac pharetra. 
+                                            Pellentesque nisl ante, blandit vitae lorem at, 
+                                            bibendum ullamcorper erat.
+                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="sections campaing__objectives">
+                        <h2>Objectives</h2>
+                        <div class="investments">
+                            <h3>investments</h3>
+                            <div class="objectives__content">
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 1000 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellos inversores que deseen contribuir con 1000 euros se les
+                                                dará el 3% de las ganancias del juego por 3 meses.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 5000 a 7000 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellos inversores que deseen contribuir entre 5000 y 7000 euros se les
+                                                dará entre 5% a 8% de las ganancias del juego por 6 meses.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 15000 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellos inversores que deseen contribuir con 15000 euros se les
+                                                dará el 18% de las ganancias del juego por 9 meses.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 20000 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellos inversores que deseen contribuir con 20000 euros o más
+                                                se les dará el 25% de las ganancias del juego por 15 meses.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="donations">
+                            <h3>Donations</h3>
+                            <div class="objectives__content">
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 7 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellas personas que deseen contribuir con 7 euros se les
+                                                regalará una camiseta del juego.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 10 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellas personas que deseen contribuir con 10 euros contarán con un
+                                                10% de descuento en la tienda virtual para adquirirlo además de tener
+                                                acceso a la beta cerrada.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 15 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellas personas que deseen contribuir con 15 euros contarán con un
+                                                30% de descuento en la tienda virtual para adquirirlo además de tener
+                                                acceso a la beta cerrada.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 20 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellas personas que deseen contribuir con 20 euros contarán con un
+                                                50% de descuento en la tienda virtual para adquirirlo además de tener
+                                                acceso a la beta cerrada.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 25 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellas personas que deseen contribuir con 25 euros contarán con un
+                                                75% de descuento en la tienda virtual para adquirirlo además de tener
+                                                acceso a la beta cerrada.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 30 euros</h3>
+                                        <figcaption>
+                                            <p>Para aquellas personas que deseen contribuir con 30 euros contarán gratis 
+                                                con el juego en formato digital además de tener acceso a la beta cerrada.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="content">
+                                    <figure class="information">
+                                        <h3>Dona 40 euros o más</h3>
+                                        <figcaption>
+                                            <p>Para aquellas personas que deseen contribuir con 40 euros contarán gratis 
+                                                con el juego en formato digital además de tener acceso a la beta cerrada un poster
+                                                oficial y la camiseta del juego.
+                                            </p>
+                                            <button>Donar</button>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="sections campaing__team">
+
+                    </section>
+                </article>
+                <article id="FAQ" class="tabs" style="display: none;">
+                    <div id="accordion">
+                        <div class="panel">
+                             <div class="header">header1</div>
+                             <div class="body">body of panel 1</div>
+                        </div>
+                        <div class="panel">
+                             <div class="header">header2</div>
+                             <div class="body">body of panel 2</div>
+                        </div>
+                        <div class="panel">
+                             <div class="header">header3</div>
+                             <div class="body">body of panel 3</div>
+                        </div>
+                   </div>
+                </article>
+                <article id="comments" class="tabs" style="display: none;">
+                    <div id="disqus_thread"></div>
+                </article>
+            </div>
+            <footer></footer>
+        </div>
+    </body>
+    <script>
+        function openLink(evt, animName) {
+            var i, x, tablinks;
+
+            if(animName === 'FAQ') {
+                initAccordion(document.getElementById("accordion"));
+            }
+
+            x = document.getElementsByClassName("tabs");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(animName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function showDescription(event) {
+            let id = event.currentTarget.id;
+            let description;
+            const twentyfive = document.querySelector('.twentyfive')
+            const fifty = document.querySelector('.fifty')
+            const seventyFive = document.querySelector('.seventyFive')
+
+            if(id === 'zero'){
+                hideDescription()
+            }else if(id === 'twentyfive'){
+                twentyfive.querySelector('figcaption').classList.add('showDescription')
+                fifty.querySelector('figcaption').classList.remove('showDescription')
+                seventyFive.querySelector('figcaption').classList.remove('showDescription')
+            }else if(id === 'fifty'){
+                twentyfive.querySelector('figcaption').classList.add('showDescription')
+                fifty.querySelector('figcaption').classList.add('showDescription')
+                seventyFive.querySelector('figcaption').classList.remove('showDescription')
+            }else if(id === 'seventyFive'){
+                twentyfive.querySelector('figcaption').classList.add('showDescription')
+                fifty.querySelector('figcaption').classList.add('showDescription')
+                seventyFive.querySelector('figcaption').classList.add('showDescription')
+            }else{
+                twentyfive.querySelector('figcaption').classList.add('showDescription')
+                fifty.querySelector('figcaption').classList.add('showDescription')
+                seventyFive.querySelector('figcaption').classList.add('showDescription')  
+            }
+        }
+
+        function hideDescription() {
+            const allObjectives = document.querySelectorAll('.contributions__description figcaption')
+            allObjectives.forEach(item => {
+                item.classList.remove('showDescription')
+            })
+        }
+
+
+    function initAccordion(accordionElem){
+        var allPanelElems = accordionElem.querySelectorAll(".panel");
+        for (var i = 0, len = allPanelElems.length; i < len; i++){
+            allPanelElems[i].addEventListener("click", handlePanelClick);
+        }
+        showPanel(allPanelElems[0])
+
+        function handlePanelClick(event){
+            showPanel(event.currentTarget);
+        }
+
+  
+        function showPanel(panel){
+            var expandedPanel = accordionElem.querySelector(".active");
+            if (expandedPanel){
+                expandedPanel.classList.remove("active");
+            }
+            panel.classList.add("active");
+        }
+    }
+    
+    var disqus_config = function () {
+        this.page.url = window.location.href;  
+        this.page.identifier = window.location.href; 
+    };
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://fissure-1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+
+    const buttonMenu = document.querySelector('.nav-toggle')
+    const menu = document.querySelector('nav')
+    buttonMenu.addEventListener('click', collapseMenu, false)
+
+    function collapseMenu() {
+        menu.classList.toggle('collapse')
+        buttonMenu.classList.toggle('open')
+    }
+
+    </script>
+</html>
