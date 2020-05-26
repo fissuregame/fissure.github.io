@@ -42,6 +42,9 @@ header {
     left: 0;
     z-index: 1;
     width: 100%;
+    -webkit-box-shadow: 0px 3px 9px -3px #c2c6cc87;
+    -moz-box-shadow: 0px 3px 9px -3px #c2c6cc87;
+    box-shadow: 0px 3px 9px -3px #c2c6cc87
 }
 
 nav {
@@ -49,7 +52,8 @@ nav {
     align-items: center;
     height: 0;
     opacity: 0;
-    transition: height .5s ease
+    transition: height .5s ease;
+    padding-right: 20px;
 }
 
 nav ul {
@@ -64,7 +68,7 @@ nav ul {
     max-width: 100px;
     height: auto;
     margin: 5px 0;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .tablink {
@@ -534,6 +538,7 @@ audio{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .information img, .objectives__content h3{
@@ -561,7 +566,6 @@ figcaption {
     align-items: center;
 }
 
-
 .campaing__contributions .information {
     background-color: #000;
 }
@@ -581,7 +585,6 @@ figcaption {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
 }
-
 
 .contributions__description figcaption.showDescription{
     -webkit-transform: translate(0, 0);
