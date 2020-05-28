@@ -9,29 +9,29 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <div class="header__game-name">
-                    <img src="assets/titulo.jpg">
+        <header>
+            <div class="header__game-name">
+                <img src="assets/titulo.jpg">
+            </div>
+            <div class="nav-toggle">
+                <div class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="nav-toggle">
-                    <div class="menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="tablink menu-item__hover active" onclick="openLink(event, 'campaing')">Campaña</li>
-                        <li class="tablink menu-item__hover" onclick="openLink(event, 'FAQ')">Preguntas frecuentes</li>
-                        <li class="tablink menu-item__hover" onclick="openLink(event, 'comments')">Comentarios</li>
-                    </ul>
-                </nav>
-            </header>
+            </div>
+            <nav>
+                <ul>
+                    <li class="tablink menu-item__hover active" onclick="openLink(event, 'campaing')">Campaña</li>
+                    <li class="tablink menu-item__hover" onclick="openLink(event, 'FAQ')">Preguntas frecuentes</li>
+                    <li class="tablink menu-item__hover" onclick="openLink(event, 'comments')">Comentarios</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="wrapper">
             <div class="header__background-image">
                 <div class="header__image">
                     <img src="assets/background_image.jpg">
@@ -406,7 +406,7 @@
                     <div id="disqus_thread"></div>
                 </article>
             </div>
-        </div>
+        </main>
         <footer>
             <p>© 2020 Fissure. All rights reserved.</p>
             <a href="mailto:fissure.mult@gmail.com">fissure.mult@gmail.com</a>
