@@ -20,8 +20,16 @@
 }
 
 @font-face {
-  font-family: 'fissure';
-  src:  url('fonts/multime.ttf');
+  font-family: 'fissure-regular';
+  src:  url('../fonts/Acme-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fissure-title';
+  src:  url('../fonts/multime.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -52,8 +60,18 @@ body{
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-size: 16px;
-  /* height: 100vh; */
-  /*font-family: 'fissure';*/
+  font-family: 'fissure-regular';
+  letter-spacing: .2px;
+}
+
+h2 {
+  font-family: 'fissure-title';
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 img {
@@ -73,10 +91,6 @@ p{
   max-width: 100%;
   margin: 30px auto 40px;
   padding: 0 10px;
-}
-
-.description {
-  font-size: 20px;
 }
 
 .sections{
@@ -229,6 +243,8 @@ nav ul {
   color: var(--primary-color);
   font-size: 18px;
   text-align: center;
+  font-family: 'fissure-title';
+  letter-spacing: 2px;
 }
 
 .header__logo {
