@@ -15,6 +15,8 @@ function openLink(evt, animName) {
   }
   document.getElementById(animName).style.display = "block";
   evt.currentTarget.className += " active";
+
+  collapseMenu()
 }
 
 function showDescription(event) {
