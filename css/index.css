@@ -133,10 +133,14 @@ nav ul {
 }
 
 .collapse{
+  transition: height .5s ease, opacity .3s ease;
+  justify-content: center;
+}
+
+.collapse.active {
   opacity: 1;
   height: 120px;
   transition: height .5s ease, opacity .3s ease .4s;
-  justify-content: center;
 }
 
 .tablink.active{

@@ -78,7 +78,7 @@ const menu = document.querySelector('nav')
 buttonMenu.addEventListener('click', collapseMenu, false)
 
 function collapseMenu() {
-  menu.classList.toggle('collapse')
+  menu.classList.toggle('active')
   buttonMenu.classList.toggle('open')
 }
 
