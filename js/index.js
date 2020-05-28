@@ -15,8 +15,6 @@ function openLink(evt, animName) {
   }
   document.getElementById(animName).style.display = "block";
   evt.currentTarget.className += " active";
-
-  collapseMenu()
 }
 
 function showDescription(event) {
@@ -80,6 +78,7 @@ buttonMenu.addEventListener('click', collapseMenu, false)
 function collapseMenu() {
   menu.classList.toggle('active')
   buttonMenu.classList.toggle('open')
+  
 }
 
 var disqus_config = function () {

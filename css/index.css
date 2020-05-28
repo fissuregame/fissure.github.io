@@ -147,8 +147,9 @@ nav ul {
 }
 
 .collapse{
-  transition: height .5s ease, opacity .3s ease;
+  transition: height .5s linear, opacity .3s linear;
   justify-content: center;
+  font-size: 16px;
 }
 
 .collapse.active {
