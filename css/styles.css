@@ -6,8 +6,20 @@
 .text__disclaimer {
     font-size: 12px;
     letter-spacing: 1px;
+    margin-top: 15px;
 }
 
+.text__gratitude {
+    margin-bottom: 20px;
+}
+
+.text__gratitude .block {
+    margin-top: 25px;
+}
+
+.text__promotion {
+    margin-bottom: 20px;
+}
 
 /***** OBJECTIVE *****/
 .objectives__content {
@@ -277,7 +289,7 @@ figcaption {
 }
 
 /***** TEAM *****/
-.campaing__team {
+.campaing__content {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -378,7 +390,7 @@ figcaption {
         margin-bottom: 0;
     }
 
-    .campaing__team {
+    .campaing__content {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -392,6 +404,10 @@ figcaption {
 
     .wrapper {
         min-height: calc(100vh - 58px);
+    }
+
+    .shared {
+        margin-top: 0;
     }
 }
 
@@ -416,6 +432,27 @@ figcaption {
         width: 140px;
         height: 140px;
     }
+
+    .cover__page {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cover__page img {
+        height: 380px;
+        width: auto;
+    }
+
+    .text__fissure {
+        font-size: 20px;
+        padding-left: 45px;
+        width: 50%;
+    }
+
+    .content__page{
+        padding: 0 55px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {

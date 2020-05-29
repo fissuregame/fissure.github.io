@@ -90,6 +90,10 @@ p{
   margin: 0;
 }
 
+a {
+  color: var(--secondary-color, #5EBDCF);
+}
+
 .wrapper {
   min-height: calc(100vh - 86px);
 }
@@ -419,19 +423,7 @@ footer a{
 
 .shared i {
   font-size: 21px;
-  margin-right: 5px;
+  margin-right: 8px;
   color: var(--secondary-color, #5EBDCF);
-}
-
-/***** TABS *****/
-.tabs {
-  /*img {
-    opacity: 0.3;
-    transition: opacity .6s;
-}
-
-img:hover {
-    opacity: 1;
-}*/
 }
 
