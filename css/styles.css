@@ -1,3 +1,14 @@
+/***** HOME *****/
+.cover__page {
+    margin-bottom: 25px;
+}
+
+.text__disclaimer {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
 /***** OBJECTIVE *****/
 .objectives__content {
     display: flex;

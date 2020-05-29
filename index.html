@@ -10,7 +10,8 @@
     </head>
     <body>
         <header>
-            <a href="https://fissuregame.github.io/fissure.github.io/" class="header__game-name">
+            <!--https://fissuregame.github.io/fissure.github.io/-->
+            <a href="#" class="header__game-name" onclick="openLink(event, 'home')">
                 <img src="assets/titulo.jpg">
             </a>
             <div class="nav-toggle">
@@ -25,7 +26,7 @@
             </div>
             <nav class="collapse">
                 <ul>
-                    <li class="tablink menu-item__hover active" onclick="openLink(event, 'campaing')">Campaña</li>
+                    <li class="tablink menu-item__hover" onclick="openLink(event, 'campaing')">Campaña</li>
                     <li class="tablink menu-item__hover" onclick="openLink(event, 'FAQ')">Preguntas frecuentes</li>
                     <li class="tablink menu-item__hover" onclick="openLink(event, 'comments')">Comentarios</li>
                 </ul>
@@ -48,7 +49,60 @@
                 </div>
             </div>
             <div class="content__page">
-                <article id="campaing" class="tabs">
+                <article id="home" class="tabs">
+                    <div class="cover__page">
+                        <img src="assets/fissurecartel.jpg" alt="Fissure Cover Page">
+                        <div class="text__fissure">
+                            <h2>¿Qué es Fissure?</h2>
+                            <p>
+                                Fissure es el perfeccionamiento y la evolución de los juegos clásicos de aventuras 
+                                que a tantos nos apasionaron de pequeños. Historias de heroes, 
+                                reinos mágicos y males antiguos. Fissure es sentarte en tu zona de juego favorita, 
+                                coger un mando y explorar dimensiones paralelas, derrotar a feroces enemigos y, 
+                                en definitiva, convertirte en un héroe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text__promotion">
+                        <h2>¿Qué es un héroe?</h2>
+                        <p>
+                            Un héroe no es héroe al principio de la historia. 
+                            En este caso nunca es un heroe porque es una heroína: Elisabeth. 
+                            Elisabeth no es una guerrera ni una aventurera. 
+                            Es la muchacha que le trae los cafés y le hace la colada al mago de la corte del reino de Courland. 
+                            Sin embargo en uno de sus experimentos, su jefe abre por error cientos de portales por todo Courland. 
+                            Estos portales llevan a otra dimensión, muy lejana en el tiempo y en el espacio, pero dominada por un mal aterrador. 
+                            De estos portales salen hordas de monstruos que atacan el reino y aterrorizan a sus habitantes. Tras el experimento, el mago muere y Elisabeth resulta ser la única que sabe cómo cerrar esos portales. Elisabeth es lo que se suele llamar un héroe por casualidad. 
+                            Sin embargo, ¿tendrá la valenía para adentrarse en lugares desconocidos, poblados de criaturas temibles y cumplir su misión?
+                        </p>
+                        <h2>¿Cuál es la misión?</h2>
+                        <p>
+                            Sea cual sea no será fácil. 
+                            Elisabeth deberá visitar todos los portales que han aparecido por el reino de Courland, 
+                            adentrarse al otro lado y encontrar los apuntes de su maestro que revelan cómo cerrar ese portal. 
+                            Para ello se tendrá que abrir paso entre centenares de enemigos. 
+                            Para ello hará uso de los distintos hechizos que irá encontrando a lo largo de su viaje, asi como distintas armas que le servirán para hacer frente cualquier peligro. 
+                            Dependiendo de tu estilo de juego y de los enemigos con los que se enfrente Elisabeth optarás por lanzas , espadas, o hachas. 
+                            También podrás usar el poderoso bastón de tu maestro, que te permitirá invocar espíritus que te ayudarán en tu periplo. 
+                            Elije sabiamente, muchos caminos te llevan a tu destino, pero el viaje es el que hace que te enfrentes a él 
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="text__gratitude">
+                        <h2>Acreditaciones</h2>
+                        <div>Iconos diseñados por 
+                            <a href="https://www.flaticon.es/autores/roundicons" title="Roundicons">Roundicons</a> 
+                            from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.com</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text__disclaimer">
+                        <p>ATENCIÓN: Esta página simula una campaña de crowdfunding de un videojuego y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 19/20 (Quintana), URJC. 
+                        La URJC no se hace responsable del contenido expuesto por el autor.
+                        </p>
+                    </div>
+                </article>
+                <article id="campaing" class="tabs" style="display: none;">
                    <section class="sections campaing__presentation">
                         <div class="media">
                             <video controls>
@@ -56,7 +110,7 @@
                                 Your browser does not support the video tag.
                             </video>
                             <audio controls>
-                                <!--<source src="horse.mp3" type="audio/mpeg">-->
+                                <source src="assets/musica.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -73,7 +127,7 @@
                     </section>
                     <hr>
                     <section class="sections campaing__contributions">
-                        <h2>Contributions</h2>
+                        <h2>Objectivos</h2>
                         <div class="contributions__info">
                             <input type="radio" 
                                 class="campaing__stages" 
@@ -183,9 +237,9 @@
                     </section>
                     <hr>
                     <section class="sections campaing__objectives">
-                        <h2>Objectives</h2>
+                        <h2>Contribuciones</h2>
                         <div class="investments">
-                            <h3>Investments</h3>
+                            <h3>Inversores</h3>
                             <div class="objectives__content">
                                 <div class="content">
                                     <figure class="information">
@@ -234,7 +288,7 @@
                             </div>
                         </div>
                         <div class="donations">
-                            <h3>Donations</h3>
+                            <h3>Donaciones</h3>
                             <div class="objectives__content">
                                 <div class="content">
                                     <figure class="information">
@@ -323,6 +377,7 @@
                     </section>
                     <hr>
                     <section class="sections campaing__team">
+                        <h2>Equipo</h2>
                         <div class="team__content">
                             <div class="team__image">
                                 <img src="assets/mariano_de_biase.jpg" alt="Mariano De Biase">
@@ -332,7 +387,8 @@
                                 <div class="team__appointment">
                                     <p>Publisher</p>
                                     <p>Programming</p>
-                                    <p>Sound Desing</p>
+                                    <p>Composer</p>
+                                    <p>CG Ilustrator</p>
                                     <p>Game Desing</p>
                                 </div>
                             </div>
@@ -345,8 +401,7 @@
                                 <label>Hector Muñoz Gómez</label>
                                 <div class="team__appointment">
                                     <p>Concept Art</p>
-                                    <p>Character Desing</p>
-                                    <p>CG Ilustrator</p>
+                                    <p>Publisher</p>
                                     <p>Game Desing</p>
                                 </div>
                             </div>
@@ -359,6 +414,7 @@
                                 <label>Róman Batanero Mata</label>
                                 <div class="team__appointment">
                                     <p>Game Desing</p>
+                                    <p>Text and typography editor</p>
                                 </div>
                             </div>
                         </div>
@@ -408,8 +464,19 @@
             </div>
         </main>
         <footer>
-            <p>© 2020 Fissure. All rights reserved.</p>
+            <p>© 2020 Fissure</p>
             <a href="mailto:fissure.mult@gmail.com">fissure.mult@gmail.com</a>
+            <div class="shared">
+                <a href="https://www.facebook.com/Fissure-102464338150095/?modal=admin_todo_tour" target="_blank">
+                    <i class="icon-facebook"></i>
+                </a>
+                <a href="https://twitter.com/Fissure35835524" target="_blank">
+                    <i class="icon-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/fissure_game/" target="_blank">
+                    <i class="icon-instagram"></i>
+                </a>
+            </div>
         </footer>
     </body>
     <script src="js/index.js"></script>
